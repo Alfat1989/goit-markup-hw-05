@@ -141,7 +141,7 @@ ul {
   position: absolute;
   width: 100%;
   height: 4px;
-  bottom: 0;
+  bottom: -1px;
   left: 50%;
   transform: translateX(-50%);
 
@@ -720,18 +720,6 @@ ul {
 
 .product-img-thumb {
   position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.portfolio-link:hover .product-img-thumb::before {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  background-color: rgba(33, 150, 243, 0.9);
 }
 
 .portfolio-descript-hover {
@@ -900,7 +888,13 @@ ul {
   cursor: pointer;
 }
 
+.modal-button:hover {
+  background-color: var(--akcent-color);
+  fill: var(--bg-color);
+}
+
 .modal-icon {
+  display: inline-flex;
   width: 11px;
   height: 11px;
 }
