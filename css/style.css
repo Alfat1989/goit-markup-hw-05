@@ -106,6 +106,10 @@ ul {
 .site-nav .link {
   padding-top: 32px;
   padding-bottom: 32px;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
 }
 
 .site-nav .link:hover,
@@ -184,6 +188,10 @@ ul {
 .header-links .link,
 .footer-discript .link {
   color: var(--second-text-color);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
 }
 
 .header-links .link:hover,
@@ -205,6 +213,10 @@ ul {
   border: 0;
 
   fill: var(--second-text-color);
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
 }
 
 /* основной сайт */
@@ -260,6 +272,10 @@ ul {
   letter-spacing: 0.06em;
 
   cursor: pointer;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
 }
 
 .hero-button:hover,
@@ -508,6 +524,10 @@ ul {
   border-radius: 50%;
 
   color: #afb1b8;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
 }
 
 .comand-item-link:hover {
@@ -522,11 +542,14 @@ ul {
   width: 20px;
   height: 20px;
   fill: currentColor;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
 }
 
 .social-icon:hover {
   fill: var(--bg-color);
-  background-color: var(--akcent-color);
 }
 
 /* Клипенты */
@@ -549,6 +572,21 @@ ul {
 
   border: 1px solid var(--icn-color);
   border-radius: 4px;
+
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+}
+
+.clients-icon {
+  width: 106px;
+  height: 60px;
+
+  fill: var(--icn-color);
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
 }
 
 .clients-link:hover {
@@ -561,13 +599,6 @@ ul {
 
 .clients-item:not(:last-child) {
   margin-right: 30px;
-}
-
-.clients-icon {
-  width: 106px;
-  height: 60px;
-
-  fill: var(--icn-color);
 }
 
 /* Футер */
@@ -604,6 +635,10 @@ ul {
   color: rgba(255, 255, 255, 0.6);
 
   text-decoration: none;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
 }
 
 .footer-link:hover,
@@ -647,6 +682,10 @@ ul {
   color: var(--bg-color);
 
   border-radius: 50%;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
 }
 
 .join-link:hover,
@@ -695,8 +734,32 @@ ul {
   border-radius: 4px;
 }
 
+.button {
+  display: inline-block;
+  color: var(--main-text-color);
+  background-color: var(--second-bg-color);
+
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6em;
+
+  cursor: pointer;
+
+  padding: 6px 22px;
+  border: 0;
+  border-radius: 4px;
+
+  transition-property: background-color, box-shadow, color;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+}
+
 .button:hover,
-.buttons:focus {
+.button:focus {
+  color: var(--bg-color);
+  background-color: var(--akcent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -731,15 +794,17 @@ ul {
   left: 50%;
   transform: translate(-50%, -50%);
 
-  background-color: rgba(33, 150, 243, 0.9);
-
-  opacity: 0;
-}
-
-.portfolio-descript-hover {
   font-size: 18px;
   line-height: 1.5;
   color: var(--bg-color);
+
+  background-color: rgba(33, 150, 243, 0.9);
+
+  opacity: 0;
+
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
 }
 
 .portfolio-link:hover .portfolio-descript-hover {
@@ -769,30 +834,6 @@ ul {
 
   font-size: 16px;
   line-height: 1.8;
-}
-
-.button {
-  display: inline-block;
-  color: var(--main-text-color);
-  background-color: var(--second-bg-color);
-
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6em;
-
-  cursor: pointer;
-
-  padding: 6px 22px;
-  border: 0;
-  border-radius: 4px;
-}
-
-.button:hover,
-.button:focus {
-  color: var(--bg-color);
-  background-color: var(--akcent-color);
 }
 
 .portfolio {
