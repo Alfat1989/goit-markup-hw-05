@@ -1030,15 +1030,19 @@ ul {
   background-color: var(--bg-color);
 
   cursor: pointer;
-}
 
-.modal-button:hover {
-  background-color: var(--akcent-color);
-  fill: var(--bg-color);
+  transition: background-color 250ms var(--transition-timing);
 }
 
 .modal-icon {
   display: inline-flex;
   width: 11px;
   height: 11px;
+
+  transition: fill 250ms var(--transition-timing);
+}
+
+.modal-button:hover {
+  background-color: var(--akcent-color);
+  fill: var(--bg-color);
 }
