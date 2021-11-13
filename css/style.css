@@ -272,7 +272,7 @@ ul {
   line-height: 1.8em;
   letter-spacing: 0.06em;
 
-  /* overflow: hidden; */
+  overflow: hidden;
 
   cursor: pointer;
 
@@ -281,7 +281,7 @@ ul {
   transition-timing-function: linear;
 }
 
-.hero-icon {
+/* .hero-icon {
   display: inline-flex;
   justify-content: center;
   align-items: baseline;
@@ -293,8 +293,8 @@ ul {
   left: 5px;
   transform: translateY(-50%);
 
-  transition-property: tarnsform;
-  transition-duration: 250ms;
+  transition-property: transform;
+  transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -312,8 +312,16 @@ ul {
   position: absolute;
   bottom: -50%;
   left: 5px;
-  /* transform: translateY(-50%); */
+  transform: translateY(-50%);
+
+  transition-property: transform;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.hero-button:hover .hero-icon-after {
+  transform: translateY(-35px);
+} */
 
 /* .hero-button::before {
   content: "";
@@ -852,6 +860,7 @@ ul {
   display: block;
   padding: 0;
   text-decoration: none;
+  overflow: hidden;
 }
 
 .portfolio-link:hover,
@@ -862,16 +871,22 @@ ul {
 
 .product-img-thumb {
   position: relative;
+  overflow: hidden;
+}
+
+.portfolio-img {
+  overflow: hidden;
 }
 
 .portfolio-descript-hover {
   position: absolute;
+  top: 0;
+  left: 0;
   padding: 63px 24px;
   width: 100%;
   height: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+
+  transform: translateX(-101%);
 
   font-size: 18px;
   line-height: 1.5;
@@ -879,15 +894,13 @@ ul {
 
   background-color: rgba(33, 150, 243, 0.9);
 
-  opacity: 0;
-
-  transition-property: opacity;
+  transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: linear;
 }
 
 .portfolio-link:hover .portfolio-descript-hover {
-  opacity: 1;
+  transform: translateX(0);
 }
 
 .descriopion-container {
